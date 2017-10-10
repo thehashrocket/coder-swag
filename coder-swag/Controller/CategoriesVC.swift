@@ -50,6 +50,7 @@ class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
             let barBtn = UIBarButtonItem()
             barBtn.title = ""
             navigationItem.backBarButtonItem = barBtn
+            print(sender)
             assert(sender as? Category != nil)
             productsVC.initProducts(category: sender as! Category)
         }
